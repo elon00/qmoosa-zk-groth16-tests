@@ -1,0 +1,41 @@
+name: Groth16 genuine proof interoperability
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: qmoosa-zk-groth16-tests
+      - uses: actions/checkout@v4
+        with:
+          repository: elon00/qmoosa-zk-groth16-protocol
+          ref: 9b7f29227196b57f2c3d9f52cb123f72c5fd6afc
+          path: qmoosa-zk-groth16-protocol
+      - uses: actions/checkout@v4
+        with:
+          repository: elon00/qmoosa-zk-groth16-engine
+          ref: 001b1ee757fa19f47eccb7f7e4c573c77cd4c668
+          path: qmoosa-zk-groth16-engine
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install and build protocol
+        working-directory: qmoosa-zk-groth16-protocol
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm run build
+      - name: Install and build pinned engine
+        working-directory: qmoosa-zk-groth16-engine
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm run build
+      - name: Verify genuine proof interoperability
+        working-directory: qmoosa-zk-groth16-tests
+        run: npm test

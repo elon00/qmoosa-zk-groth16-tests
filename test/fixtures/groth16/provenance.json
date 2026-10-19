@@ -1,0 +1,72 @@
+{
+  "artifacts": [
+    {
+      "file": "circuit.r1cs",
+      "git_blob_sha": "5fc028b7ae655d52b7fe21a83a2a50700e58d1a2",
+      "sha256": "b51cd258f2f426ae8c75c6031a5f9b02ffc9e74aebeee2cfb01a6e233c590b1c",
+      "size": 684,
+      "source": "test/plonk_circuit/circuit.r1cs"
+    },
+    {
+      "file": "witness.wtns",
+      "git_blob_sha": "06c6f009f8430415b1af3a0956e78dc15c7a3a2e",
+      "sha256": "026890c5e380c67fa7f77a71f03dc503b7514672627771e170e5cd7699934ed9",
+      "size": 300,
+      "source": "test/plonk_circuit/witness.wtns"
+    },
+    {
+      "file": "upstream-circuit.circom",
+      "git_blob_sha": "f5f9d3867f4f9f7eb23a0b6cee7d4024aa08c905",
+      "sha256": "8f48048a08e077e150eacdad1360fc8b905e891b0d888a4bc1c2334d23e4f2e0",
+      "size": 247,
+      "source": "test/plonk_circuit/circuit.circom"
+    },
+    {
+      "file": "UPSTREAM-COPYING.txt",
+      "git_blob_sha": "9dc9bca8666f26b6242ddfb3f4cf46db6248a2a4",
+      "sha256": "d95c74a62d14f13ebfbc8c1783c315e2ed2389e80048b264bdeddb8114dee945",
+      "size": 35130,
+      "source": "COPYING"
+    },
+    {
+      "file": "circuit.wasm",
+      "git_blob_sha": "f1b228fee55dba30d933b6e8aaae43c0df63b0d6",
+      "sha256": "ecee2cb2f529480b28f35b900ee366c78924b0b873ff031e1c31d878535e17e6",
+      "size": 31051,
+      "source": "test/plonk_circuit/circuit.wasm"
+    }
+  ],
+  "at_utc": "2026-10-19T11:55:25.901053+00:00",
+  "description": "Compiled R1CS/witness from official upstream; newly generated Groth16 setup and proofs, not a PLONK proof or a synthetic pairing relation",
+  "generated_by": "snarkjs@0.7.6",
+  "generated_files": [
+    {
+      "name": "verification_key.json",
+      "sha256": "6aca56f16914d9551d13085b9fc2efba76a3315e5f6f83bcac8a76b757bf7cc4"
+    },
+    {
+      "name": "proof.json",
+      "sha256": "3e8d3b6211bba1dbb998e7b4c63c6db83ddea58ed78be0065effab3d66433152"
+    },
+    {
+      "name": "public.json",
+      "sha256": "e033dbb39e08e16664cafad65fc455bc5de9e956586289babb0389cd0faff07d"
+    },
+    {
+      "name": "proof-zero.json",
+      "sha256": "6929a14f244cc96050b4e07507f6e3b83ca5cfdc7579c04993c7ddd6d9dbb563"
+    },
+    {
+      "name": "public-zero.json",
+      "sha256": "f23c0da9d376a050f0d33dcdecfb4eca39c4d9514b36c7fc15a30647a7eafec9"
+    }
+  ],
+  "generation_evidence": "QMOOSA mission/evidence/heartbeat-20261019T115211Z",
+  "inspected_commit": "22003fbcde78608be902520661832db7933d279e",
+  "inspected_package_version": "0.7.6",
+  "production_setup": false,
+  "purpose": "Use the proving-system-independent compiled R1CS and witness to create a NEW Groth16 test setup/proof. No PLONK proof or verifying key is used.",
+  "source_repo": "https://github.com/iden3/snarkjs",
+  "test_setup_only": true,
+  "tool_package_lock_sha256": "1c99bc618e6d7798467ff5de99878f5d982a7e1943615443e87e833a787e20a8"
+}

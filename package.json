@@ -1,0 +1,10 @@
+{
+  "name": "@qmoosa/zk-groth16-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cross-repository Groth16 proof wire-format and calldata interoperability tests",
+  "scripts": {
+    "test": "node --test test/interoperability.test.mjs"
+  }
+}
