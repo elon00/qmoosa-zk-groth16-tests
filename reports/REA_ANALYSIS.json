@@ -1,0 +1,56 @@
+{
+  "engine": "REA_Reverse_Engineer_Anything",
+  "status": "STRUCTURE_RECONSTRUCTED",
+  "analyzed_files": 16,
+  "manifest": {
+    "package.json": {
+      "bytes": 288
+    },
+    "README.md": {
+      "bytes": 2008
+    },
+    "scripts\\rea_inspector.py": {
+      "bytes": 1485
+    },
+    "scripts\\rsi_engine.py": {
+      "bytes": 2039
+    },
+    "test\\interoperability.test.mjs": {
+      "bytes": 4500
+    },
+    "tests\\reality_check_harness.py": {
+      "bytes": 1250
+    },
+    ".github\\workflows\\ci.yml": {
+      "bytes": 1320
+    },
+    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
+      "bytes": 531
+    },
+    "test\\fixtures\\groth16\\calldata-zero.json": {
+      "bytes": 831
+    },
+    "test\\fixtures\\groth16\\calldata.json": {
+      "bytes": 831
+    },
+    "test\\fixtures\\groth16\\proof-zero.json": {
+      "bytes": 834
+    },
+    "test\\fixtures\\groth16\\proof.json": {
+      "bytes": 834
+    },
+    "test\\fixtures\\groth16\\provenance.json": {
+      "bytes": 2870
+    },
+    "test\\fixtures\\groth16\\public-zero.json": {
+      "bytes": 20
+    },
+    "test\\fixtures\\groth16\\public.json": {
+      "bytes": 20
+    },
+    "test\\fixtures\\groth16\\verification_key.json": {
+      "bytes": 3204
+    }
+  },
+  "timestamp": 1794027278
+}
