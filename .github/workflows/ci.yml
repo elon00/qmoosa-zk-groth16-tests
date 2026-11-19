@@ -23,7 +23,7 @@ jobs:
           repository: elon00/qmoosa-zk-groth16-engine
           ref: 001b1ee757fa19f47eccb7f7e4c573c77cd4c668
           path: qmoosa-zk-groth16-engine
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '24'
       - name: Install and build protocol
